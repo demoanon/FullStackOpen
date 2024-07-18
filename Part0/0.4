@@ -1,1 +1,6 @@
-
+1. Save button is clicked
+2. brower to server : HTTP POST request to server address new_note
+3. server responds with 302 HTTP status code
+4. server to browser : HTTP GET  request to the address defined in the header's Location - the address notes.
+5.  The reload causes three more HTTP requests: fetching the style sheet (main.css), the JavaScript code (main.js), and the raw data of the notes (data.json).
+6. Each note object has two fields: content containing the actual content of the note, and date containing the date and time the note was created.
